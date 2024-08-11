@@ -3,16 +3,15 @@ import { NextResponse } from 'next/server'
 
 type Middleware = (request: NextRequest) => NextResponse
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const redirectIfAuthenticated: Middleware = (request) => {
-  const authSession = request.cookies.get('auth')?.value
+// const redirectIfAuthenticated: Middleware = (request) => {
+//   const authSession = request.cookies.get('auth')?.value
 
-  if (authSession) {
-    return NextResponse.redirect(new URL('/', request.url))
-  }
+//   if (authSession) {
+//     return NextResponse.redirect(new URL('/', request.url))
+//   }
 
-  return NextResponse.next()
-}
+//   return NextResponse.next()
+// }
 
 const authenticated: Middleware = (request) => {
   const authSession = request.cookies.get('auth')?.value

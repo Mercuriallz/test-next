@@ -2,10 +2,6 @@ import { Card, CardBody, Col, Row } from "react-bootstrap";
 import Register from "@/app/(authentication)/register/register";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Register",
-  description: "Register Page",
-};
 
 export default function Page() {
   return (
@@ -22,3 +18,9 @@ export default function Page() {
     </Row>
   );
 }
+
+
+export const metadata = {
+  title: "Register",
+  description: "Register Page",
+};

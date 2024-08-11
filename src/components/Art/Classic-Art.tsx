@@ -41,6 +41,8 @@ export default function ClassicArts() {
   const [dataArt, setDataArt] = useState<Datum[]>([]);
   const [detailId, setDetailId] = useState(0);
   const [isOpenDetail, setIsOpenDetail] = useState(false);
+  const [artDetail, setArtDetail] = useState<any>()
+  const [artReplace, setArtReplace] = useState<any>()
 
   function closeDetail() {
     setIsOpenDetail(false);
@@ -55,6 +57,23 @@ export default function ClassicArts() {
       .then((result) => {
         if (result.status === 200) {
           setDataArt(result.data.data);
+          let artDetailObj = dataArt.find((obj) => Number(obj.id) === Number(detailId));
+
+          setArtDetail(artDetailObj)
+
+          if (artDetail === null || undefined) {
+            return (
+              <>
+                <Typography fontWeight="bold">Art Detail No Found</Typography>
+              </>
+            );
+          }
+        
+          const artDescription = artDetail?.description;
+        
+          const artReplaceNew = artDescription?.replace(/<\/?[^>]+>/gi, '');
+
+          setArtReplace(artReplaceNew)
         }
       })
       .catch((err) => {
@@ -70,20 +89,9 @@ export default function ClassicArts() {
         });
       });
   }
+  
 
-  let artDetail = dataArt.find((obj) => Number(obj.id) === Number(detailId));
-
-  if (artDetail === null || undefined) {
-    return (
-      <>
-        <Typography fontWeight="bold">Art Detail No Found</Typography>
-      </>
-    );
-  }
-
-  const artDescription = artDetail?.description;
-
-  const artReplace = artDescription?.replace(/<\/?[^>]+>/gi, '');
+ 
 
   useEffect(() => {
     getClassicArt();
