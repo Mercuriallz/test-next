@@ -1,0 +1,116 @@
+{
+    "status": 200,
+    "cabang": [
+      {
+        "cabang_1": "Jakarta",
+        "cabang_2": "Depok",
+        "cabang_3": "Bali",
+        "cabang_4": "Padang",
+        "cabang_5": "Bandung"
+      }
+    ],
+    "data": [
+      {
+        "id": 1,
+        "jakarta": 50,
+        "depok": 40,
+        "bali": 30,
+        "padang": 60,
+        "bandung": 45,
+        "month": "January",
+        "year": 2022
+      },
+      {
+        "id": 2,
+        "jakarta": 55,
+        "depok": 42,
+        "bali": 32,
+        "padang": 58,
+        "bandung": 48,
+        "month": "February",
+        "year": 2022
+      },
+      {
+        "id": 3,
+        "jakarta": 60,
+        "depok": 45,
+        "bali": 35,
+        "padang": 65,
+        "bandung": 50,
+        "month": "March",
+        "year": 2022
+      },
+      {
+        "id": 4,
+        "jakarta": 58,
+        "depok": 48,
+        "bali": 38,
+        "padang": 62,
+        "bandung": 52,
+        "month": "April",
+        "year": 2022
+      },
+      {
+        "id": 5,
+        "jakarta": 62,
+        "depok": 50,
+        "bali": 40,
+        "padang": 68,
+        "bandung": 55,
+        "month": "May",
+        "year": 2022
+      },
+      {
+        "id": 6,
+        "jakarta": 52,
+        "depok": 42,
+        "bali": 31,
+        "padang": 63,
+        "bandung": 47,
+        "month": "January",
+        "year": 2023
+      },
+      {
+        "id": 7,
+        "jakarta": 57,
+        "depok": 44,
+        "bali": 33,
+        "padang": 59,
+        "bandung": 46,
+        "month": "February",
+        "year": 2023
+      },
+      {
+        "id": 8,
+        "jakarta": 65,
+        "depok": 47,
+        "bali": 36,
+        "padang": 66,
+        "bandung": 49,
+        "month": "March",
+        "year": 2023
+      },
+      {
+        "id": 9,
+        "jakarta": 55,
+        "depok": 49,
+        "bali": 39,
+        "padang": 64,
+        "bandung": 51,
+        "month": "April",
+        "year": 2023
+      },
+      {
+        "id": 10,
+        "jakarta": 60,
+        "depok": 52,
+        "bali": 42,
+        "padang": 70,
+        "bandung": 53,
+        "month": "May",
+        "year": 2023
+      }
+    ],
+    "message": "Successfully Get Data Sales"
+  }
+  
